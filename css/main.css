@@ -1,0 +1,501 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* =================================
+            CCS Reset Complete :) 
+==================================== */
+
+
+/* ===================
+Animation section 
+======================*/
+
+@keyframes transformIcon {
+    0%{
+        transform: scale(1) rotate(0deg);
+    }
+    25%{
+        transform: scale(1.2) rotate(0deg);
+    }
+    50%{
+        transform: scale(1.5) rotate(360deg);
+    }
+    75%{
+        transform: scale(1) rotate(360deg);
+    }
+    100%{
+        transform: scale(1) rotate(360deg);
+    }
+}
+
+/* ==================================
+Custom Styles           
+===================================== */
+
+body {
+    background: url(/images/beech1920–1.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background: #cbf7d6;
+    border-top: #551480 2px solid;
+    border-left: #551480 2px solid;
+    border-right: #551480 2px solid;
+}
+
+h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5rem;
+    color: #551480;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #551480;
+}
+
+h3 {
+    font-family: 'Open Sans', sans-serif;
+    color: #551480;
+    font-size: 1.7rem;
+    letter-spacing: 2pt;
+}
+li a {
+    font-weight: bold;
+    text-transform: uppercase;
+}
+p,
+a,
+label,
+button {
+    font-family: 'Open Sans', sans-serif;
+}
+/* ========================
+        Navigation styles
+=========================== */
+.header-container {
+    background:#cbf7d6;
+    border-bottom: #551480 2px solid;
+    padding: 10px;
+}
+
+.mobile-logo {
+    max-width: 150px;
+}
+
+.desktop-logo {
+    display: none;
+}
+
+nav li {
+    margin-bottom: 5px;
+    text-align: center;
+}
+
+.nav-list a
+{ 
+    display: block;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    box-sizing: border-box;
+    transition: .5s .5s;
+}
+
+
+nav a:hover,
+nav a.current{
+    background: #551480 ;
+    color: white;
+    border-radius: 5px;
+    text-decoration: underline;
+    transition: .5s ease-in-out;
+    padding: 10px;
+}
+
+.nav-button {
+    border: none;
+    padding: 0;
+    background: none;
+}
+.im-shopping-cart {
+    color: white;
+    background-color: #551480;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+
+/* ===========================
+    Welcome Banner styles 
+==============================*/
+
+
+.welcome-banner {
+    background: url(/images/adobestock-lady-mobile-2.jpg) no-repeat;
+    background-size: cover;
+    padding-top: 100px;
+    padding-bottom: 300px;
+}
+.welcome-text {
+    background: rgba(255, 255, 255, 0.5);
+    color:#551480;
+    padding: 10px;
+    border-radius:5px;
+    font-weight: bolder;
+    font-size: 2rem;
+    line-height: 2.2rem;
+    float:right;
+    margin-right: 25px;
+    margin-left: 350px;
+}
+
+
+/* ============================
+        Footer styles         
+=============================== */
+
+.footer {
+    font-family: 'Open Sans', sans-serif;
+    background: #cbf7d6;
+    color:#551480;
+    border-bottom: #551480 2px solid;
+    border-top: #551480 2px solid;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+#socialicon {
+    color:#551480;
+    font-size: 1.5rem;
+    float: right;
+    margin-left: 20px;
+    margin-right: 25px ;
+}
+
+#socialicon:hover {
+    animation: transformIcon 2s ease-in-out forwards;
+}
+
+/* =============================
+        Menu-Page Style 
+================================*/
+
+.flavor-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 45px;
+}
+
+.icecream-cup:hover{
+    animation: transformIcon 2s ease-in-out forwards;
+}
+
+.flavor-banner h1 {
+    margin-bottom: 20px;
+}
+
+.menu-container {
+    background: white;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.green{
+    text-align: center;
+    margin: 15px;
+    line-height: 35pt;
+}
+
+.pink{
+    text-align: center;
+    margin: 15px;
+    line-height: 35pt;
+}
+
+.blue{
+    text-align: center;
+    margin: 15px;
+    line-height: 35pt;
+}
+
+#add-cart-button {
+    margin: 15px;
+    color: #551480;
+    text-decoration: none;
+    border: #551480 5px solid;
+    padding: 10px 50px 10px 50px;
+    transition: .7s .5s;
+}
+
+#add-cart-button:hover {
+    background-color: #551480;
+    color: white;
+    transition: .7s ease-in-out;
+}
+
+
+/* =============================
+       Contact-Page styles
+================================ */
+
+.contact-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background: white;
+    text-align: center;
+    margin-bottom: 20px;
+    padding: 45px;
+}
+
+.contact-banner h1 {
+    margin-bottom: 20px;
+}
+
+.contact-container {
+    background: white;
+    padding: 30px;
+    line-height: 1.5;
+}
+
+.icecream-stick:hover {
+    animation: transformIcon 2s ease-in-out forwards;
+}
+
+.location {
+    line-height: 2;
+    text-align: center;
+    margin-right: 10px;
+}
+.contact-us h1{
+    text-align: center;
+}
+.contact-us {
+    line-height: 2;
+    padding-right: 25px;
+
+}
+input[type=email],
+input[type=text] {
+	width: 100%;
+}
+
+textarea {
+	width: 100%;
+	height: 200px;
+	resize: none;
+}
+
+label {
+    color: #551480;
+    font-size: 15pt;
+    font-weight: bold;
+}
+
+#button{
+    color: #551480;
+    background-color:white;
+    font-size: 15pt;
+    padding: 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: .5s .5s;
+}
+
+
+#button:hover {
+    color: white;
+    background-color: #551480;
+    font-size: 15pt;
+    padding: 12px;
+    cursor: pointer;
+    transition: .5s ease-in-out;
+}
+
+table {
+    width: 100%;
+}
+
+table th:nth-child(n),
+table td:nth-child(n) { 
+	border: 2px solid #551480;
+}
+
+table th {
+    background: #cbf7d6;
+}
+
+.info {
+    margin-top: 10px;
+    line-height: 2;
+}
+
+.desktop-map {
+    display: none;
+}
+/* =====================================================
+********************************************************
+VVVVVVVVVVVVVVVVV Desktop styles VVVVVVVVVVVVVVVVVVVVVVV
+********************************************************
+========================================================*/
+
+@media screen and (min-width:760px){
+
+
+/* =====================
+    Desktop Nav style        
+======================== */
+.nav-list {
+    display: flex;
+    align-items: center;
+}
+
+.nav-list li {
+    flex-grow: 1;
+    margin-left: 25px;
+}
+
+.nav-list li a {
+    border: #551480;
+}
+
+.mobile-logo{
+    display: none;
+}
+
+.desktop-logo {
+    display: flex;
+    max-width: 400px; 
+}
+
+/* ======================
+    Desktop Home style
+========================= */
+.welcome-banner {
+    background: url(/images/adobestock-lady.jpeg) no-repeat;
+    background-size: cover;
+    padding-bottom: 630px;
+    padding-top: 100px;
+}
+
+
+
+/* =======================
+    Desktop Menu style
+========================== */
+
+.menu-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.green {
+    grid-column: span 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.green {
+    grid-column: span 1;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.blue {
+    grid-column: span 2;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+/* ========================
+    Desktop Contact style
+=========================== */
+
+.contact-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 25px;
+}
+
+.info {
+    text-align: center;
+}
+
+
+}
+
+@media screen and (min-width:1100px) {
+    .menu-section {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .green {
+        grid-column: span 1;
+    }
+
+    .green {
+        grid-column: span 1;
+    }
+
+    .blue {
+        grid-column: span 1;
+    }
+
+}
